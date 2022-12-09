@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "Reey";
+    src: url("../fonts/Reey-Regular.otf") format("opentype");
+}
+
+body {
+    margin: 0;
+
+    background-color: #fff;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+    line-height: 1.4;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Page */
+.page {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+
+/* Intro */
+.intro {
+    width: 100%;
+    min-height: 1056px;
+
+    background: url("../images/header/bg.jpg") center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+/* Nav */
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    margin-top: 65px;
+}
+
+.nav__links {
+    display: flex;
+
+    align-items: center;
+}
+
+.nav__links-item {
+    margin-right: 60px;
+
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.nav__search {
+    width: 185px;
+    height: 54px;
+    margin-right: 48px;
+
+    background-color: #fff;
+    border-radius: 30px;
+
+}
+
+.intro__content {
+    display: flex;
+    flex-direction: column; 
+}
+
+.intro__content-logo {
+    margin: 100px 0 0 100px ;
+
+    align-self: flex-start;
+}
+
+.intro__title {
+    margin: 35px 0 0 100px;
+
+    font-family: "Reey", sans-serif;
+    font-size: 92px;
+    color: #fff;
+}
+
