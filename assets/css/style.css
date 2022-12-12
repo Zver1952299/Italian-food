@@ -10,6 +10,7 @@ body {
 
     font-family: "Open Sans", sans-serif;
     font-size: 25px;
+    font-weight: 400;
     line-height: 1.4;
     color: #000;
     -webkit-font-smoothing: antialiased;
@@ -44,11 +45,11 @@ ul, ol {
 
 
 /* Page */
+
 .page {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 15px;
 
     display: flex;
     flex-direction: column;
@@ -58,17 +59,107 @@ ul, ol {
 
 
 /* Intro */
+
 .intro {
     width: 100%;
     min-height: 1056px;
 
     background: url("../images/header/bg.jpg") center no-repeat;
     background-size: cover;
-    overflow: hidden;
+
+    position: relative;
+}
+
+.intro__content {
+    display: flex;
+    flex-direction: column; 
+}
+
+.intro__content-logo {
+    margin: 100px 0 0 100px ;
+
+    align-self: flex-start;
+}
+
+.intro__title {
+    margin: 35px 0 0 100px;
+
+    font-family: "Reey", sans-serif;
+    font-size: 92px;
+    color: #fff;
+}
+
+.intro__subtitle {
+    margin: 100px 0 0 100px;
+
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #fff;
+    letter-spacing: 6px;
+}
+
+.intro__btn {
+    width: 220px;
+    height: 50px;
+    margin: 65px 0 0 100px;
+    padding-top: 7px;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    color: #2e3034;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-align: center;
+
+    background-color: #ebebeb;
+    border-radius: 20px;
+
+    transition: color .2s linear, background-color .2s linear, font-size .2s linear;
+}
+
+.intro__btn:hover {
+    font-size: 27px;
+    color: #e9e9e9;
+
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.intro__text {
+    margin: 25px 0 0 100px;
+    width: 480px;
+
+    font-size: 20px;
+    color: #fff;
+}
+
+.intro__img-1 {
+    position: absolute;bottom: 180px;
+    right: 50px;
+    z-index: 1;
+}
+
+.intro__img-2 {
+    position: absolute;bottom: 30px;
+    right: 540px;
+    z-index: 2;
+}
+
+.intro__img-3 {
+    width: 610px;
+    height: 480px;
+
+    position: absolute;bottom: -145px;
+    right: 0;
+    z-index: 1;
 }
 
 
 /* Nav */
+
 .nav {
     display: flex;
     justify-content: flex-end;
@@ -103,22 +194,232 @@ ul, ol {
 
 }
 
-.intro__content {
+
+/* Menu */
+
+.menu {
+    background-color: #fff;
+}
+
+.menu__container {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    align-items: center;
 }
 
-.intro__content-logo {
-    margin: 100px 0 0 100px ;
-
-    align-self: flex-start;
-}
-
-.intro__title {
-    margin: 35px 0 0 100px;
+.menu__title {
+    margin-top: 80px;
 
     font-family: "Reey", sans-serif;
-    font-size: 92px;
+    font-size: 75px;
+    color: #222328;
+}
+
+.menu__subtitle {
+    width: 710px;
+    margin-top: 50px;
+
+    font-size: 27px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.menu__content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.menu__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu__img {
+    margin: 0 auto;
+}
+
+.menu__text {
+    width: 320px;
+    margin: 20px 0 0 50px;
+}
+
+.menu__item-title {
+    font-size: 29px;
+    font-weight: 700;
+    color: #343434;
+    text-decoration: underline rgba(0, 0, 0, 0);
+
+    transition: text-decoration-color .2s linear;
+}
+
+.menu__item-title:hover {
+    text-decoration-color: rgba(0, 0, 0, 1);
+}
+
+.menu__item-subtitle {
+    margin-top: 10px;
+
+    font-size: 23px;
+    font-weight: 400;
+    color: #343434;
+}
+
+.menu__btn {
+    width: 335px;
+    height: 75px;
+    margin: 120px 0 50px 0;
+    padding-top: 22px;
+
+    font-size: 23px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+    text-align: center;
+
+    background-color: #343434;
+    border-radius: 35px;
+
+    transition: color .2s linear, background-color .2s linear, font-size .2s linear;
+}
+
+.menu__btn:hover {
+    font-size: 28px;
+
+    color: #343434;
+
+    background-color: #fff;
+}
+
+
+/* Our story */
+
+.our-story {
+    background-color: #27292c;
+}
+
+.our-story__container {
+    display: flex;flex-direction: column;
+    align-items: center;
+}
+
+.our-story__title {
+    margin-top: 80px;
+
+    font-family: "Reey", sans-serif;
+    font-size: 75px;
     color: #fff;
 }
 
+.our-story__text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    width: 1060px;
+    flex-wrap: wrap;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.our-story__item {
+    padding: 30px;
+    width: 50%;
+}
+
+.our-story__btn {
+    width: 275px;
+    height: 60px;
+    margin: 50px 0 70px 0;
+    padding-top: 10px;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #27292c;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-align: center;
+
+    background-color: #e9e9e9;
+    border-radius: 25px;
+
+    transition: color .2s linear, background-color .2s linear, font-size .2s linear;
+}
+
+.our-story__btn:hover {
+    font-size: 30px;
+
+    color: #e9e9e9;
+
+    background-color: #27292c;
+}
+
+
+/* Promos */
+
+.promos {
+    padding: 0 80px;
+
+    background-color: #fff;
+}
+
+.promos__item {
+    display: flex;
+    margin-top: 60px;
+}
+
+.promos__content {
+    display: flex;flex-direction: column;
+    justify-content: center;
+    width: 550px;
+}
+
+.promos__title{
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 1.2;
+}
+
+.promos__text {
+    margin-top: 40px;
+
+    font-size: 29px;
+    line-height: 1.1;
+}
+
+.promos__btn {
+    width: 335px;
+    height: 75px;
+    margin: 50px 0 50px 0;
+    padding-top: 22px;
+
+    font-size: 23px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+    text-align: center;
+
+    background-color: #343434;
+    border-radius: 35px;
+
+    transition: color .2s linear, background-color .2s linear, font-size .2s linear;
+}
+
+.promos__btn:hover {
+    font-size: 28px;
+
+    color: #343434;
+
+    background-color: #fff;
+}
