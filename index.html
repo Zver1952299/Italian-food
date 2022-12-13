@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/3942147c03.js" crossorigin="anonymous"></script>
     <title>Italian food</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
 
         <!-- Intro -->
 
-        <div class="intro">
+        <header class="intro">
             <nav class="nav">
                 <div class="nav__links">
                     <a class="nav__links-item" href="#">Home</a>
@@ -24,7 +25,10 @@
                     <a class="nav__links-item" href="#">Our story</a>
                     <a class="nav__links-item" href="#">Contact us</a>
                 </div>
-                <div class="nav__search"></div>
+                <form class="nav__form" action="/" method="post">
+                    <input class="nav__input" type="text" placeholder="Поиск">
+                    <button class="nav__btn" type="submit"><i class="fa-solid fa-magnifying-glass fa-2x"></i></button>
+                </form>
             </nav>
             <div class="intro__content">
                 <a class="intro__content-logo" href="#">
@@ -38,7 +42,7 @@
                 <img class="intro__img-2" src="assets/images/header/img2.png" alt="">
                 <img class="intro__img-3" src="assets/images/header/img3.png" alt="">
             </div>
-        </div> <!-- ./intro -->
+        </header> <!-- ./intro -->
 
 
         <!-- Menu -->
@@ -132,7 +136,116 @@
                     <img class="img" src="assets/images/promos/img2.png">
                 </div>
             </div>
+        </section> <!-- ./promos -->
+
+
+        <!-- Description -->
+        
+        <section class="descr">
+            <h2 class="descr__title">Lorem Ipsum Dolor Sit Amer</h2>
+            <h3 class="descr__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</h3>
+            <img class="descr__pizza" src="assets/images/description/pizza.png" alt="">
+            <img class="descr__slice" src="assets/images/description/slice-pizza.png" alt="">
+            <img class="descr__leafs" src="assets/images/description/leafs.png" alt="">
+        </section> <!-- ./descr -->
+
+
+        <!-- Reviews -->
+
+        <section class="reviews">
+            <div class="reviews__container">
+                <div class="reviews__items">
+                    <div class="reviews__item">
+                        <h2 class="reviews__title">Lorem Ipsum</h2>
+                        <h3 class="reviews__subtitle">Lorem ipsum dolor sit amet, consecte
+                            sectetur adipisicing elit, tation omne 
+                            ullamco laboris nisi ut aliqolore.</h3>
+                    </div>
+                    <div class="reviews__item">
+                        <h2 class="reviews__title">Lorem Ipsum</h2>
+                        <h3 class="reviews__subtitle">Lorem ipsum dolor sit amet, consecte
+                            sectetur adipisicing elit, tation omne 
+                            ullamco laboris nisi ut aliqolore.</h3>
+                    </div>
+                    <div class="reviews__item">
+                        <h2 class="reviews__title">Lorem Ipsum</h2>
+                        <h3 class="reviews__subtitle">Lorem ipsum dolor sit amet, consecte
+                            sectetur adipisicing elit, tation omne 
+                            ullamco laboris nisi ut aliqolore.</h3>
+                    </div>
+                </div>
+
+                <div class="reviews__content">
+                    <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+                    <p class="reviews__bottom">Lorem Ipsum</p>
+                </div>
+            </div>
+        </section> <!-- ./reviews -->
+
+
+        <!-- Contact -->
+
+        <section class="contact">
+            <div class="contact__container">
+                <h2 class="contact__title">Title Here</h2>
+                <h3 class="contact__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</h3>
+                <form class="contact__form" action="/" method="post">
+                    <input class="contact__input" type="text" placeholder="Your Email">
+                    <button class="contact__btn" type="submit">Subscribe</button>
+                </form>
+                <img class="contact__leafs" src="assets/images/contact/leafs.png" alt="">
+            </div>
         </section>
+
+
+        <!-- Footer -->
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__content">
+                    <h2 class="footer__title">Title Here</h2>
+                    <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim.</p>
+                    <div class="footer__links-icon">
+                        <a class="footer__link" href="#">
+                            <i class="fa-brands fa-square-instagram icon"></i>
+                        </a>
+                        <a class="footer__link" href="#">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                        <a class="footer__link" href="#">
+                            <i class="fa-brands fa-square-twitter"></i>
+                        </a>
+                        <a class="footer__link" href="#">
+                            <i class="fa-brands fa-square-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__nav">
+                    <div class="footer__colomn">
+                        <h3 class="footer__colomn-title">About</h3>
+                        <a href="#" class="footer__colomn-link">History</a>
+                        <a href="#" class="footer__colomn-link">Our Team</a>
+                        <a href="#" class="footer__colomn-link">Brand Guidelines</a>
+                        <a href="#" class="footer__colomn-link">Terms &amp; Condition</a>
+                        <a href="#" class="footer__colomn-link">Privacy Policy</a>
+                    </div>
+                    <div class="footer__colomn">
+                        <h3 class="footer__colomn-title">Services</h3>
+                        <a href="#" class="footer__colomn-link">How to Order</a>
+                        <a href="#" class="footer__colomn-link">Our Product</a>
+                        <a href="#" class="footer__colomn-link">Order Status</a>
+                        <a href="#" class="footer__colomn-link">Promo</a>
+                        <a href="#" class="footer__colomn-link">Payment Method</a>
+                    </div>
+                    <div class="footer__colomn">
+                        <h3 class="footer__colomn-title">Other</h3>
+                        <a href="#" class="footer__colomn-link">Contact Us</a>
+                        <a href="#" class="footer__colomn-link">Help</a>
+                        <a href="#" class="footer__colomn-link">Privacy</a>
+                    </div>
+                </div>
+            </div> <!-- ./container -->
+        </footer>
     </div>
 </body>
 </html>
